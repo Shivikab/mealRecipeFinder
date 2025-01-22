@@ -30,7 +30,11 @@ body{
     z-index: 1000; /* Ensure it stays above other elements */
 }
 
-  
+.heading{
+    background-color:white;
+    border-radius:3px;
+    white-space: nowrap;
+} 
 .container{
     margin: auto;
     max-width: 800px;
@@ -42,7 +46,7 @@ body{
     /* color: pink; */
     color:#2d2013;
     /* color:white; */
-    /* background: none; */
+    background: none;
 }
 
 .flex{
@@ -58,7 +62,8 @@ input,button{
     padding: 8px 10px;
     margin: 0;
     /* color: lightskyblue; */
-    background-color: rgb(225, 239, 248);
+    /* background-color: rgb(225, 239, 248); */
+    background-color: rgb(244, 249, 212);
 }
 
 input[type="text"]{
@@ -98,6 +103,7 @@ input[type="text"]{
     height: 180px;
     width: 180px;
     text-align: center;
+    /* background-color: green; */
 }
 
 .meal img{
@@ -105,6 +111,7 @@ input[type="text"]{
     height: 100%;
     border: 4px black solid;
     border-radius: 2px;
+    /* background-color: green; */
 }
 
 .meal-info{
@@ -124,12 +131,14 @@ input[type="text"]{
 .meal:hover .meal-info{
     /* uske upr pointer krenge toh info show hogi */
     opacity: 1;
+    background-color: rgb(244, 249, 212);
 }
 
 .single-meal{
     margin: 30px auto;
     /* width: 70%; */
     border: 2px black solid;
+    /* background-color: green; */
 }
 
 .single-meal img{
@@ -163,7 +172,8 @@ input[type="text"]{
     border:1px solid #ededed;
     border-radius:5px;
     /* background-color: lightskyblue; */
-    background-color: rgb(176, 221, 249);
+    /* background-color: rgb(176, 221, 249); */
+    background-color: rgb(239, 248, 181);
     display: inline-block;
     color: #2d2013;
     font-size: 15px;
@@ -200,4 +210,10 @@ input[type="text"]{
         height: 300px;
         width: 300px;
     }
+    .heading {
+        font-size: 1.2rem; /* Reduce font size for smaller screens */
+      }
+      .top-left-icon {
+        font-size: 30px; /* Adjust icon size for smaller screens */
+      }
 }
