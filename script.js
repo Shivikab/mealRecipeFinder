@@ -67,6 +67,14 @@ function getMealById(mealID) {
     .then((data) => {
       const meal = data.meals[0];
       addMealToDOM(meal);
+
+      // Scroll down to the single meal information section
+      document.getElementById("single-meal").scrollIntoView({
+        behavior: "smooth", // Smooth scroll effect
+        block: "start", // Align to the top of the viewport
+      });
+
+      
     });
 }
 
